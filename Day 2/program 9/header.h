@@ -1,0 +1,1 @@
+void operate(int option, int num1, int num2);
