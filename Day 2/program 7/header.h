@@ -1,0 +1,1 @@
+void check_if_armstrong(int number);
