@@ -1,0 +1,1 @@
+int generate_fibonacci(int number);
