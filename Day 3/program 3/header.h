@@ -1,0 +1,1 @@
+void generate_pattern(int num);
