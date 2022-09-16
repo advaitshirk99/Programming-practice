@@ -1,46 +1,36 @@
 #include "header.h"
+#include<stdio.h>
 
-typedef struct min_max {
-	int min;
-	int max;
-} pair;
+void find_max_min(int array[], int size, int *max, int *min){
 
-pair find_max_min(int array[], int size){
-
-	pair minmax;
-	int i;
+	int i, temp;
 
 	//If only 1 element in the array, return that as both min and max term
 	if (size == 1){
 		
-		minmax.max = array[0];
-		minmax.min = array[0];
+		*max = array[0];
+		*min = array[0];
 	}	
 
-	//If more than 1 element, set 1st element as max and next one as min
-	if (array[0] > array[1]){
-		
-		minmax.max = array[0];
-		minmax.min = array[1];
-	}
-	else{
+	if (array[0] < array[1]){
 
-		minmax.max = array[1];
-		minmax.min = array[0];
+		temp = *min;
+		*min = *max;
+		*max = temp;
 	}
-
+	
 	//Find the min-max pair in the array
 	for (i=2; i<size; i++){
-		if (array[i] > minmax.max){
+		if (array[i] > *max){
 
-			minmax.max = array[i];
+			*max = array[i];
 		}
 
-		else if (array[i]<minmax.min){
+		else if (array[i] < *min){
 
-			minmax.min = array[i];
+			*min = array[i];
 		}
 	}
 
-	return minmax;
+	printf("The max element is:\n%d\nAnd the min element is:\n%d\n", *max, *min);
 }
