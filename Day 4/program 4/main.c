@@ -14,13 +14,13 @@ int main(){
 	arr2 = get_array(size2);
 
 
-	//Test search (WORKS)
+	/*Test search (WORKS)
 	int status, element;
 	printf("Enter element to be found: \n");
 	scanf("%d", &element);
 	status = search(arr1, element, size1);
 	printf("Status: %d\n", status);
-
+	*/
 
 	//Test insert (WORKS)
 	int *arr;
@@ -34,10 +34,11 @@ int main(){
 	int *union_array;
 	union_array = set_union(arr1, size1, arr2, size2);
 	int union_size = sizeof(union_array)/sizeof(int);
+	printf("union size: %d\n", union_size);
 
 	display_array(arr1, size1);
 	display_array(arr2, size2);
-	display_array(union_array, union_size);
+	display_array(union_array, 5);
 
 	free(arr1);
 	free(arr2);

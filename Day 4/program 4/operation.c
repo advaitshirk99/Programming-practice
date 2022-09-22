@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #include "header.h"
 
+/*Function to get the elements of the array*/
 int *get_array(int size){
 
 	int i, *arr;
@@ -15,6 +16,7 @@ int *get_array(int size){
 	return arr;
 }
 
+/*Function to display the elements of the array*/
 void display_array(int *arr, int size){
 
 	int i;
@@ -23,19 +25,22 @@ void display_array(int *arr, int size){
 	printf("\n");
 }
 
-int search(int *arr, int element, int size){
+/*Function to search an element in an array and if found, update the position where it is located*/
+int search(int *arr, int element, int size, int *position){
 
 	int i;
 	
 	for(i=0; i<size; i++){
+
 		if(*(arr+i) == element){
+			*position = i;
 			return 1;
 		}
 	}
-
 	return 0;
 }
 
+/*Function to insert an element in the array*/
 int insert(int *arr, int element, int position){
 
 	*(arr+position) = element;
@@ -43,25 +48,31 @@ int insert(int *arr, int element, int position){
 
 }
 
+/*Function to find the union of two arrays*/
 int *set_union(int *arr1, int size1, int *arr2, int size2){
 
-	int i=0, j=0, *union_array, *final_array, position=0;
+	int i=0, *union_array, element_position=0, *search_position;
 	int union_size = size1 + size2;
 
+	search_position = malloc(sizeof(int));
 	union_array = malloc(union_size * sizeof(int));
 
-	while(i != size1){ //assuming that size1 is bigger (Can be checked in the main)
-		if (!search(arr2, *(arr1+i), size2) && !search(union_array, *(arr1+i), union_size) && !search(union_array, *(arr2+j), union_size)){
-			position += insert(union_array, *(arr1+i), position);
-			position += insert(union_array, *(arr2+j), position);
-		}
-		else{
-			i++;
-			j++;
+	for(i=0; i<size1; i++){
+
+		//arr1 will be bigger than arr2 (will be handled in main)
+		if (!search(union_array, *(arr1+i), union_size, search_position)){
+
+			if(!search(arr2, *(arr1+i), size2, search_position)){
+
+				element_position = insert(union_array, *(arr1+i), element_position);
+				printf("unique element position in array:%d\n", element_position);
+				element_position = insert(union_array, *(arr2+(*search_position)),*search_position);
+				printf("unique element position in array:%d\n", element_position);
+
+			}
 		}
 	}
 
-	final_array = (int *)realloc(union_array, sizeof(int) * (position+1));
-
-	return final_array;
+	//final_array = (int *)realloc(union_array, sizeof(int) * (position+1));
+	return union_array;
 }
