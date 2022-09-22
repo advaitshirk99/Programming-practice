@@ -13,11 +13,36 @@ int main(){
 	arr1 = get_array(size1);
 	arr2 = get_array(size2);
 
+
+	//Test search (WORKS)
+	int status, element;
+	printf("Enter element to be found: \n");
+	scanf("%d", &element);
+	status = search(arr1, element, size1);
+	printf("Status: %d\n", status);
+
+
+	//Test insert (WORKS)
+	int *arr;
+	arr = malloc(10*sizeof(int));
+	int next_pos, pos = 8;
+	next_pos = insert(arr, 5, pos);
+	printf("inserted element: %d\nNext position: %d\n",*(arr+8), next_pos);
+
+
+	//Testing set_union function (NOT WORKING)
+	int *union_array;
+	union_array = set_union(arr1, size1, arr2, size2);
+	int union_size = sizeof(union_array)/sizeof(int);
+
 	display_array(arr1, size1);
 	display_array(arr2, size2);
+	display_array(union_array, union_size);
 
 	free(arr1);
 	free(arr2);
+	free(arr);
+	free(union_array);
 
 	return 0;
 }
