@@ -19,7 +19,7 @@ int main(){
 	printf("Enter element to be found: \n");
 	scanf("%d", &element);
 	status = search(arr1, element, size1);
-	printf("Status: %d\n", status);
+	printf("Status: %d\n\n", status);
 	*/
 
 	//Test insert (WORKS)
@@ -27,14 +27,14 @@ int main(){
 	arr = malloc(10*sizeof(int));
 	int next_pos, pos = 8;
 	next_pos = insert(arr, 5, pos);
-	printf("inserted element: %d\nNext position: %d\n",*(arr+8), next_pos);
+	printf("inserted element: %d\nNext position: %d\n\n",*(arr+8), next_pos);
 
 
 	//Testing set_union function (NOT WORKING)
 	int *union_array;
 	union_array = set_union(arr1, size1, arr2, size2);
 	int union_size = sizeof(union_array)/sizeof(int);
-	printf("union size: %d\n", union_size);
+	printf("union size: %d\n\n", union_size);
 
 	display_array(arr1, size1);
 	display_array(arr2, size2);
