@@ -48,14 +48,22 @@ int insert(int *arr, int element, int position){ //check if position is req
 }
 
 /*Function to find the union of two arrays*/
-int *set_union(int *arr1, int size1, int *arr2, int size2){
+int set_union(int *arr1, int size1, int *arr2, int size2, int *union_array){
 
-	int i;
+	int i, j, position=0;
+	int union_size = size1+size2;
 
 	for(i=0; i<size1; i++){
-		if(!search(union_array, *() ))
+		if(!search(union_array, *(arr1+i), union_size)){
+			position = insert(union_array, *(arr1+i), position);
+		}
 	}
 
-	//final_array = (int *)realloc(union_array, sizeof(int) * (position+1));
-	return union_array;
+	for(j=0; j<size2; j++){
+		if(!search(union_array, *(arr2+j), union_size)){
+			position = insert(union_array, *(arr2+j), position);
+		}
+	}
+
+	return position;
 }
