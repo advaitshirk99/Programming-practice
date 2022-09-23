@@ -30,14 +30,16 @@ int main(){
 	printf("inserted element: %d\nNext position: %d\n\n",*(arr+8), next_pos);
 	*/
 
-	//Testing set_union function (NOT WORKING)
+	//Testing set_union function (WORKING)
 	int *union_array, final_union_size;
-
 	union_array = malloc((size1+size2) * sizeof(int));
 	final_union_size = set_union(arr1, size1, arr2, size2, union_array);
 
-	//int union_size = sizeof(union_array)/sizeof(int);
-	printf("union size: %d\n\n", final_union_size);
+	int *intersection_array, final_intersection_size, intersection_size;
+	if(size1>size2) intersection_size = size2;
+	else intersection_size = size1;
+
+	intersection_array = malloc(intersection_size )
 
 	display_array(arr1, size1);
 	display_array(arr2, size2);

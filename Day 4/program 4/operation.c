@@ -67,3 +67,24 @@ int set_union(int *arr1, int size1, int *arr2, int size2, int *union_array){
 
 	return position;
 }
+
+/*Function to find the intersection of two arrays*/
+int set_intersection(int *arr1, int size1, int *arr2, int size2, int *intersection_array){
+
+	int i, j, big_size, small_size, intersection_size, position=0;
+
+	if (size1>size2) intersection_size = size2;
+	else intersection_size = size1;
+
+	for(i=0; i<size1; i++){
+		if(search(arr2, *(arr1+i), size2) && !search(intersection_array, *(arr1+i), intersection_size)){
+			position = insert(intersection_array, *(arr1+i), position);
+		}
+	}
+
+	return position;
+}
+
+
+
+	
