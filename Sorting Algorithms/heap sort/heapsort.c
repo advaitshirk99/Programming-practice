@@ -1,5 +1,6 @@
 #include "header_heapsort.h"
 #include<stdio.h>
+#include<stdlib.h>
 
 //Swap function
 void swap(int *a, int *b){
@@ -18,9 +19,9 @@ void heapify(int arr[], int n, int i){
     left = 2 * i + 1;
     right = 2 * i + 2;
 
-    //Update indexes 
-    if (left < n && arr[left] > arr[largest])   largest = left;
-    if (right < n && arr[right] > arr[largest]) largest = right;
+    //Update indexes: < for MAX_HEAP, > for MIN_HEAP
+    if (left < n && arr[left] < arr[largest])   largest = left;
+    if (right < n && arr[right] < arr[largest]) largest = right;
 
     //Update the actual content on those indexes
     if (largest != i){
@@ -43,4 +44,15 @@ void heapSort(int arr[], int n){
         swap(&arr[0], &arr[i]);
         heapify(arr, i, 0);
     }
+}
+
+//Extract max only works on MAX_HEAPS
+int extract_max(int arr[], int n){
+
+    if (n<1) return 0;
+
+    int max = arr[0];
+    n -= 1;
+    heapify(arr, n, 0);
+    return max;
 }
