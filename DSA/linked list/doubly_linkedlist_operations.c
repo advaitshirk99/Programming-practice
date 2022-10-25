@@ -15,6 +15,7 @@ void createNode(node *ptr, int data){
 
 void dll_traverse(node *ptr);
 void deleteNode(node **headNode, node *delNode);
+void insertNode(node **headNode, node *insNode, int position);
 
 int main(){
 
@@ -47,11 +48,19 @@ int main(){
     printf("After deleting:\n");
     deleteNode(&head, head);
     dll_traverse(head);
+    printf("\n");
+    
+    node *new_node1 = (node *)malloc(sizeof(node));
+    new_node1->data = 50;
+    int position = 3;
+    insertNode(&head, new_node1, position);
 
+    dll_traverse(head);
     //free(head);
     free(node2);
     free(node3);
     free(node4);
+    free(new_node1);
     return 0;
 }
 
@@ -86,4 +95,46 @@ void deleteNode(node **headNode, node *delNode){
 
     //Free the memory occupied by the node to be deleted.
     free(delNode);
+}
+
+//Works till position 2, not beyond
+void insertNode(node **headNode, node *insNode, int position){
+
+    //If node is to be added at the front,
+    if(position == 1){
+        insNode->prev = NULL;
+        insNode->next = *headNode;
+        
+        if((*headNode) != NULL){
+            (*headNode)->prev = insNode;
+            (*headNode) = insNode;
+            return;
+        }
+    }
+
+    int i=1;
+    //(*headNode) will be the node after which the insertion has to be made
+    while(i != position-1){
+        *headNode = (*headNode)->next;
+    }
+    
+    if((*headNode)->next != NULL){    
+        //next of insNode points to prev of current node at 'position'
+        insNode->next = (*headNode)->next->prev;
+        //prev of insNode points to next of previous node (*headNode in this case)
+        insNode->prev = (*headNode)->next;
+        //next of previous node (*headNode in this case) points to insNode
+        (*headNode)->next = insNode;
+
+        //Updating prev of 'insNode's next node
+        if(insNode->next != NULL){
+            insNode->next->prev = insNode;
+        }
+    }
+    else{
+        (*headNode)->next = insNode->prev;
+        insNode->prev = (*headNode)->next;
+        insNode->next = NULL;
+        return;
+    }
 }
