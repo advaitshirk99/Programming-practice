@@ -1,0 +1,31 @@
+Time complexity:
+1) The time complexity of an algorithm quantifies the amount of time taken by an algorithm to run as a function of the length of the input.
+2) The time complexity is a function of the lenght of the given input, and not the actual time taken by an algorithm to execute on a machine.
+3) To calculate time complexity, it is assumed that constant time 'c' is taken for the execution of a single operation, and then the total operations for 'N' input length are calculated.
+4) For example: Consider a program which has to find a pair (x,y) in an array of N elements, whose sum is z
+5) Pseudo code: 
+    int arr[N], i
+    for(i=0; i<N; i++)
+        for(j=0; j<N; j++)
+            if(i!=j && arr[i]+arr[j] == z)
+                return TRUE
+    return FALSE
+6) While calculating time complexity, usually the worst case scenario is assumed, and is denoted by the Big O notation
+7) In the above example, if one operation takes 'c' time:
+    N*c operations are required for the input
+    Outer loop i runs for N times, and inner loop j runs for N times
+8) Hence, total execution time is N*c + N*N + c. N*N is the dominating factor, hence the time complexity of the given example is denoted by O(N^2) 
+
+Space Complexity:
+1) The space complexity of an algorithm quantifies the amount of space taken by and algorithm to run as a function of the lenght of the input.
+2) Similar to time complexity, the space complexity is commonly denoted by the Big O notation (O())
+3) For example: Consider a program to find sum of n elements
+4) Pseudo code:
+    int arr[n], sum=0, i, n
+    for (i=0; i<n, i++)
+        sum += arr[i]
+5) In the example, for n elements, the space required would be n*4, and assuming 4 bytes for each int variable, total space required would be 4n+12. The dominating
+   factor is 4n, which indicates the space complexity would be O(N) or linear.
+
+
+    

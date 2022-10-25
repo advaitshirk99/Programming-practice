@@ -1,0 +1,28 @@
+A) Data Structures:
+    1) Data structures are storage structures used to store and organize data.
+    2) It is a way of arranging data on a computer so that it can be accessed and updated efficiently.
+    3) It is also used for processing, retrieving, and storing data.
+    4) Data structures are of different types:
+        i) Linear DS:
+            a) Static: Arrays
+            b) Dynamic: Stacks, Queques, Linked Lists
+        ii) Non Linear DS:
+            a) Tree
+            b) Graph
+
+B) Algorithms:
+    1) An algorithm is a step by step procedure that is followed to solve a problem in finite steps.
+    2) In other words, it is a set of finite well defined instructions written in human readable language to solve a given problem.
+    3) There are various types of algorithms, such as:
+        i) Sorting Algorithms,
+        ii) Brute Force Algorithms,
+        iii) Backtracking Algorithms,
+        iv) Recursive Algorithms,
+        v) Searching Algorithms
+
+C) Performance of Algorithms:
+    1) The performance of algorithms is defined by 2 factors: time and space complexity.
+    2) Space complexity is defined as the amount of space required by an algorithm to run as a function of the length of the input.
+    3) Time Complexity is defined as the amount of time required by an algorithm to run as a function of the length of the input.
+    4) Space and time complexities are usually described using the Big Oh notation - O(f(input)), where as time complexity can also
+       be described using the Big Omega or Big Theta notation.

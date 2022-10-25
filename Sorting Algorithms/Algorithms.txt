@@ -1,0 +1,20 @@
+Algorithms:
+1) An algorithm is a step-by-step procedure that is followed to solve a problem in finite steps.
+2) In other words, it is a step by step or a set of finite well defined instructions written in human readable language to solve a given problem.
+3) Examples of Algorithms : Sorting algorithms such as bubble sort, merge sort, radix sort
+4) The 4 main criteria or guidelines that an algorithm should satisfy are:
+    i) Finiteness: Algorithm should have finite number of steps and should end in finite time.
+    ii) Input: An algorithm may have many inputs or no input at all
+    iii) Output: It should result atleast one output.
+    iv) Definiteness: Each step should be clear, and well defined. There should be no ambiguity
+    v) Effectiveness: Each step must be simple and must take finite amount of time.
+5) Example of an algorithm to find the sum of n elements:
+    Step 1: START
+    Step 2: Read input n from the user
+    Step 3: Read n elements from the user
+    Step 4: Declare sum as 0 and i as 0
+    Step 5: Repeat steps 6-7 till i<n
+    Step 6: Update sum as sum = sum + element at 'i'th position
+    Step 7: Increment i
+    Step 8: Print sum
+    Step 9: STOP

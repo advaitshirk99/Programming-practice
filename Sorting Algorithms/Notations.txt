@@ -1,0 +1,17 @@
+A) Big Oh notation:
+    1) The Big Oh notation is used to describe an asymptotic upper bound of an algorithm
+    2) It describes the most amount of time required (the worst case scenario) for a given algorithm
+    3) For example, if the time function (function of length of input) is given as:
+        g(n) = 4*(n^2) + 3*n + c, where c is constant time,
+        The dominant term in the above equation is 4*(n^2). Hence, the Big Oh complexity of the above equation would be O(n^2).
+
+B) Omega notation:
+    1) The Big Omega notation is used to describe an asymptotic lower bound of an algorithm
+    2) It describes the least amount of time required (the best case scenario) for a given algorithm
+    3) For example, if the time function (function of length of input) is given as:
+        g(n) = 4*(n^2) + 3*n + c, where c is constant time,
+        The best case would be when n=0, ie, big omega notation would be Ω(c)
+
+C) Theta notation:
+    1) The Big theta notation is used to describe the average case complexity for a given algorithm. 
+    2) It gives both, the asymptotic upper bound and the asymptotic lower bound of an algorithm.
