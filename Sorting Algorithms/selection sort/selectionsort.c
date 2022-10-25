@@ -11,14 +11,20 @@ void swap(int *a, int *b){
 void selectionSort(int arr[], int n){
 
     int i, j, min_index;
-
+    
+    //First loop to iterate through all elements excluding last one
     for(i=0; i<n-1; i++){
         
+        //Setting ith position as minimum index
         min_index = i;
+        //j starts from i+1 because i elements are already checked, and are in ascending order
         for(j=i+1; j<n; j++){
+            
+            //If element on i+1 position is lesser than element on ith position, set min_index as i+1 position
             if(arr[j] < arr[min_index]){
                 min_index = j;
-
+            
+            //The condition below only runs when the above if condition is satisfied. 
             if(min_index != i){
                 swap(&arr[min_index], &arr[i]);
             }
