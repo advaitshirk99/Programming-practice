@@ -1,0 +1,9 @@
+Stack:
+1) Stack is a data structure which follows a particular order in which operations are performed.
+2) The order may be LIFO(Last in First out) or FILO(First in Last out)
+3) It contains only one pointer (called stack pointer) that points to the top of the stack.
+
+Applications of stacks:
+1) A Stack can be used for evaluating expressions consisting of operands and operators.
+2) Stacks can be used for Backtracking, i.e., to check parenthesis matching in an expression.
+3) To reverse data, for example a string or converting decimal to binary
