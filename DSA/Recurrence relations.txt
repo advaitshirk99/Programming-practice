@@ -1,0 +1,32 @@
+T(n) = 2*T(n/2) + n
+
+a*T(n/b) + f(n) where f(n) = (n^k) * (log n)^p
+a=2; b=2; k=1; p =0;
+a=2, b^k = 2;
+
+1) Master method 
+T(n) = n^(logb a) * (log n)^p+1
+     = n^1 * (log n)^1
+     O(n*logn)
+
+2) Substitution method
+T(n) = 2*T(n/2) + n             --A
+T(n/2) = 2*T(n/4) + n/2         --eq1
+T(n/4) = 2*T(n/8) + n/4         --eq2
+
+eq1 in A
+T(n) = 2*[2*T(n/4) + n/2] + n
+     = 2^2 * T(n/4) + 2n        --B
+
+eq2 in B
+T(n) = (2^2)*[2*T(n/8) + n/4] + 2n
+     = 2^3 * T(n/8) + 3n        --C
+
+continue k times
+T(n) = (2^k)* T(n/2^k) + kn     T(1) = 1
+
+n= 2^k ---> log on both sides
+k = log n
+
+T(n) = n * T(1) + n(logn) = n + n(log n)
+O(nlog n)
