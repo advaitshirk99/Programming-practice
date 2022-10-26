@@ -52,9 +52,10 @@ int main(){
     
     node *new_node1 = (node *)malloc(sizeof(node));
     new_node1->data = 50;
-    int position = 3;
+    int position = 1;
     insertNode(&head, new_node1, position);
 
+    printf("After insertion:\n");
     dll_traverse(head);
     //free(head);
     free(node2);
@@ -73,7 +74,7 @@ void dll_traverse(node *ptr){
 }
 
 void deleteNode(node **headNode, node *delNode){
-    
+
     //Case 1: base case, checking for empty list
     if(headNode == NULL || delNode == NULL) return;
 
@@ -100,31 +101,36 @@ void deleteNode(node **headNode, node *delNode){
 //Works till position 2, not beyond
 void insertNode(node **headNode, node *insNode, int position){
 
+    node **temp;
     //If node is to be added at the front,
     if(position == 1){
+
+        insNode->next = (*headNode);
         insNode->prev = NULL;
-        insNode->next = *headNode;
         
         if((*headNode) != NULL){
             (*headNode)->prev = insNode;
-            (*headNode) = insNode;
-            return;
         }
+        (*headNode) = insNode;
     }
 
+    temp = headNode;
     int i=1;
     //(*headNode) will be the node after which the insertion has to be made
-    while(i != position-1){
-        *headNode = (*headNode)->next;
+    while(i != position-1 && *temp != NULL){
+        *temp = (*temp)->next;
+        i++;
     }
-    
-    if((*headNode)->next != NULL){    
+    i++;
+
+    if((*temp)->next != NULL){    
+
         //next of insNode points to prev of current node at 'position'
-        insNode->next = (*headNode)->next->prev;
-        //prev of insNode points to next of previous node (*headNode in this case)
-        insNode->prev = (*headNode)->next;
+        insNode->next = (*temp)->next;
         //next of previous node (*headNode in this case) points to insNode
-        (*headNode)->next = insNode;
+        (*temp)->next = insNode;
+        //prev of insNode points to next of previous node (*headNode in this case)
+        insNode->prev = (*temp);
 
         //Updating prev of 'insNode's next node
         if(insNode->next != NULL){
@@ -132,9 +138,10 @@ void insertNode(node **headNode, node *insNode, int position){
         }
     }
     else{
-        (*headNode)->next = insNode->prev;
-        insNode->prev = (*headNode)->next;
         insNode->next = NULL;
-        return;
+        (*temp)->next = insNode;
+        insNode->prev = (*temp);
     }
+
+    printf("%d\n", (*headNode)->data);
 }
