@@ -3,8 +3,8 @@ Circular Queues:
 1) A circular queue is a special versiona of queue where the last element of the queue is connected to the first element of the queue.
 2) Unlike a normal queue where we cannot insert new elements once the queue is full, even if
    there is space in the front of the queue, circular queues allow insertion of elements in the front of the queue.
-
 */
+
 #include<stdio.h>
 #include<stdlib.h>
 
