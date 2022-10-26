@@ -1,0 +1,8 @@
+Queues:
+1) Queues are linear data structures that are open at both ends and the operations are performed in first in first out (FIFO) order.
+2) One end is used to insert data (enqueue) while the other end is used to remove data (dequeue).
+
+Applications of queues:
+1) Used in CPU scheduling algorithm FCFS (first come first serve)
+2) Applied on OS to handle the interruptions
+3) Buffer for devices like keyboards
