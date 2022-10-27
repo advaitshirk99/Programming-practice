@@ -1,0 +1,14 @@
+Priority Queues
+1) Do not have specific ends
+2) Removal of element only occurs according to the priority of that element.
+3) Highest priority element is removed first
+
+Normal Queues:
+1) Have two ends, front and rear, which aid in insertion and removal operations
+2) Follows the first in first out principle
+3) Elements which are inserted first, are allowed to be removed first
+
+Applications of Heaps:
+1) Heap data structure is used in HeapSort algorithm
+2) Operations such as insert and delete in Priority queues can be efficiently implemented using binary heaps
+3) Heap implemented priority queues are implemented in graph algorithms, ex: Prim's algo
