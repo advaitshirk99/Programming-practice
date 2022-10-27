@@ -1,0 +1,10 @@
+Algorithm to check if a sum of x exists for two elements in a given array of n real numbers
+
+Input: Array of n elements, x
+Step 1: Start
+Step 2: Sort the element in ascending order using any algorithm of nlog n complexity
+Step 3: Initialize two counters, l=0 and r=n-1. 'l' increments when sum of pair is less than required sum, and 'r' decrements when 
+        sum of pairs is more than sum
+Step 4: Add elements at position l and r in the array of n elements
+Step 5: If sum>x, decrement r. If sum<x, increment l. If sum=x, return 1, to indicate a pair with sum x exists.
+Step 6: Repeat steps from 4 to 5, till l=r, which means no pair whos sum is x was found.
