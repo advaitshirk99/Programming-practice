@@ -1,0 +1,25 @@
+Consider a modification to merge sort in which ‘n/k’ sublists of length ‘k’ are sorted using insertion sort and then merged using the standard merging mechanism. 3+7
+
+a) Show that ‘n/k’ sublists each of length ‘k’ can be sorted by insertion sort in O(nk) worst-case time.
+b) Show that sublists can be merged in O(n log n/k ) worst-case time.
+
+Answers:
+a) Sorting each list takes ak^2 + bk + c where a, b, c are some constants. For n/k lists, we have
+    (n/k) * (ak^2 + bk + c) = ank + bn + cn/k
+    Hence, time complexity = O(nk)
+
+b) Sorting a sublists of length k:
+    T(a) = 0            for a=1
+           2T(a/2)+ak   for a=2^p if p>0
+    T(1) = 1k log1 = k *0=0
+    
+    Assume T(a) = ak*log a, then T(2a):
+    
+    T(2a) = 2T(a) + 2ak = 2(T(a)+ak) = 2(ak*log a +ak)
+          = 2ak(log a + 1) = 2ak(log a + log 2) = 2ak*log 2a
+    
+    Now, if we substitute a=n/k,
+    T(n/k) = (2(n/k)k * log 2(n/k))= 2n * log 2n/k
+    Hence time complexity is O(n*log (n/k))
+    
+
