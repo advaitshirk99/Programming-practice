@@ -1,0 +1,23 @@
+A) Bubble sort:
+    i) Worst case: O(n^2), when array is reverse sorted
+    ii) Best case: O(n) when array is sorted
+
+B) Insertion Sort:
+    i) Worst case: O(n^2) when array is reverse sorted
+    ii) Best case: O(n) when array is sorted
+
+C) Selection Sort:
+    i) Worst case: O(n^2)
+    ii) Best case: O(n^2)
+
+D) Merge Sort:
+    i) Worst case: O(nlogn)
+    ii) Best case: O(nlogn)
+
+E) Heap sort:
+    i) Worst case: O(nlogn)
+    ii) Best case: O(nlogn)
+
+F) Quick Sort:
+    i) Worst case: O(n^2)
+    ii) Best case: O(nlogn)
