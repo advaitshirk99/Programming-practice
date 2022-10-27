@@ -19,9 +19,9 @@ void heapify(int arr[], int n, int i){
     left = 2 * i + 1;
     right = 2 * i + 2;
 
-    //Update indexes: < for MAX_HEAP, > for MIN_HEAP
-    if (left < n && arr[left] < arr[largest])   largest = left;
-    if (right < n && arr[right] < arr[largest]) largest = right;
+    //Update indexes: > for MAX_HEAP, < for MIN_HEAP
+    if (left < n && arr[left] > arr[largest])   largest = left;
+    if (right < n && arr[right] > arr[largest]) largest = right;
 
     //Update the actual content on those indexes
     if (largest != i){
