@@ -192,7 +192,7 @@
         <Wi>
           <IntNumber>0</IntNumber>
           <FirstString>`IO0PIN</FirstString>
-          <SecondString>FF00000000000000000000000000E0FFFFFFE04101000000000000000000000000000000494F3050494E00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000001000000000000000000F03F2400000000000000000000000000000000000000B0020000</SecondString>
+          <SecondString>FF00000000000000000000000000E0FFFFFFE04101000000000000000000000000000000494F3050494E00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000001000000000000000000F03F1700000000000000000000000000000000000000B0020000</SecondString>
         </Wi>
       </LogicAnalyzers>
     </TargetOption>
@@ -247,6 +247,18 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
+      <PathWithFileName>.\main.c</PathWithFileName>
+      <FilenameWithoutPath>main.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>5</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
       <PathWithFileName>.\pll.c</PathWithFileName>
       <FilenameWithoutPath>pll.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
@@ -254,25 +266,13 @@
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
-      <FileNumber>5</FileNumber>
+      <FileNumber>6</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\pll.h</PathWithFileName>
       <FilenameWithoutPath>pll.h</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>1</GroupNumber>
-      <FileNumber>6</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>.\pll_timer_main.c</PathWithFileName>
-      <FilenameWithoutPath>pll_timer_main.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

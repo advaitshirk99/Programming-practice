@@ -427,16 +427,6 @@
               <FilePath>.\Startup.s</FilePath>
             </File>
             <File>
-              <FileName>pll.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\pll.c</FilePath>
-            </File>
-            <File>
-              <FileName>pll.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\pll.h</FilePath>
-            </File>
-            <File>
               <FileName>uart.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\uart.c</FilePath>
@@ -450,6 +440,16 @@
               <FileName>uart_main.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\uart_main.c</FilePath>
+            </File>
+            <File>
+              <FileName>pll.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Timer and Counter\pll.c</FilePath>
+            </File>
+            <File>
+              <FileName>pll.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Timer and Counter\pll.h</FilePath>
             </File>
           </Files>
         </Group>

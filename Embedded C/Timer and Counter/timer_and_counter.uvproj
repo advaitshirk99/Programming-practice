@@ -437,6 +437,11 @@
               <FilePath>.\timer.h</FilePath>
             </File>
             <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\main.c</FilePath>
+            </File>
+            <File>
               <FileName>pll.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\pll.c</FilePath>
@@ -445,11 +450,6 @@
               <FileName>pll.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\pll.h</FilePath>
-            </File>
-            <File>
-              <FileName>pll_timer_main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\pll_timer_main.c</FilePath>
             </File>
           </Files>
         </Group>
