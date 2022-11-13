@@ -11,9 +11,11 @@ int main(){
 	IODIR1 = 0x00000000;					//Setting port1's pins 16 to 31 as input pins
 	
 	while(1){
-		IOSET0 = 0x0FFF0000;				//Setting pins 16 - 23 high
-		delay(50);
-		IOCLR0 = 0x0FFF0000;				//Setting pins of 16 - 23 low
-		delay(30);
+		if(IOPIN1 & 0x00010000){
+			IOCLR0 = 0x0FFF0000;				//Setting pins of 16 - 23 low
+		}
+		else{
+			IOSET0 = 0x0FFF0000;				//Setting pins 16 - 23 high
+		}
 	}
 }
