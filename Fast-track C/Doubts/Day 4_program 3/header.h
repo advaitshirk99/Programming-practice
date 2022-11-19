@@ -1,1 +1,0 @@
-int find_max_min(int array[], int size, int *max, int *min);
