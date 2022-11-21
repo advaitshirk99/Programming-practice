@@ -20,6 +20,6 @@ char receive_char_uart0(void){
 	
 	unsigned char temp_rec_var;
 	while((U0LSR & (1<<0))==0);         //Checking RDR bit
-  temp_rec_var = U0RBR;
-  return temp_rec_var;
+  	temp_rec_var = U0RBR;
+  	return temp_rec_var;
 }
