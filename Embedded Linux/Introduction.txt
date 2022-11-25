@@ -1,0 +1,4 @@
+Topics that will be covered:
+1)Linux commands - linux os - kernel
+2)Shell scripting
+3)Embedded linux - kernel compilation
