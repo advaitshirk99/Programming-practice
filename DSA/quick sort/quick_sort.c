@@ -1,5 +1,4 @@
 // Quick sort in C
-
 #include <stdio.h>
 
 // function to swap elements
