@@ -1,0 +1,2 @@
+Vi, Vim, nano, emacs : terminal based editors
+leafpad, sublime, emacs, gedit : light ui based editors (sublime is more of an editor)

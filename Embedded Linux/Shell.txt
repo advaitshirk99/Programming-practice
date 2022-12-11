@@ -1,0 +1,20 @@
+$ : normal user
+# : root user
+.bashrc : for booting up the shell/terminal
+& : to work parallely with the terminal and the process that is opened
+man : documentation/manual for commands ex : man clear
+ifconfig : network config 
+ifup, ifdown : (if - interface), connect/disconnect particular interface
+arp : address resolution protocol
+curl : get the webpage
+wget : download from the given http address
+history > nameoffile : saves the history of the commands used so far on the terminal
+ls -al : list all contents (files/directories) with their permissions etc
+pwd : path to working directory
+../ : one directory back
+-i : inode(to be discussed)
+mkdir : make directory
+chmod +x : change mode (privileges), ex: chmod 777 (each (7)10 = (111)2 is for a user, system, etc)
+cat > filename : > indicates redirect. Whatever content is written on the console after the cat command will be redirected to the file filename (overwrite)
+cat >> filename : >> indicates append
+cat < filename : contents of file filename are redirected to the console

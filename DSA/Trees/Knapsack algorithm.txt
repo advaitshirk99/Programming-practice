@@ -1,0 +1,31 @@
+Q91, a) Knapsack problem
+
+INPUT: 
+W- Array of weight of items
+V- Array of profit of items
+M- Capacity of knapsack
+
+Items are pre-sorted in decreasing order of Pi / Vi 
+S = 0 ....(Variable to keep track of weight)
+i = 1   
+P = 0 ....(Total profit earned)
+
+while S<M do
+    if (S + W[i]) <= M then
+        S = S U W[i] .....(U: union)
+        P = P + V[i]
+    else
+        i = i + 1
+    end
+end
+
+EXAMPLE:
+Let n = 3, m = 20, (P1, P2, P3) = (25, 24, 15)
+(w1, w2, w3) = (18, 15, 10)
+(P1/w1, P2/w2, P3/w3) = (1.4, 1.6, 1.5) 
+Sorted order : (P2/w2, P3/w3, P1/w1)
+Iteration 1: s =0 < m=20
+s = 15, p = 24
+Iteration 2: s =15, < m =20
+s = 20, p = 24 + (5/10) * 15 = 31.5
+While loop stops, and final profit is 31.5 

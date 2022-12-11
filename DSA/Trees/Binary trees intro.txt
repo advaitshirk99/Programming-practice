@@ -1,0 +1,11 @@
+1) Binary tree - has atmost 2 children (can have 0, 1, or 2 children)
+2) Full binary/ Strict binary tree - Either 0 or 2 children 
+3) Almost Complete binary tree - child must be alloted left to right
+4) Complete/Perfect binary tree - No holes, has to have 2 children (except the leaf nodes)
+
+Tree traversal 
+1) Preorder: First Root, then left node, then right node 
+2) Inorder: First Left node, then root node, then right node 
+3) Postorder: First left node, then right node, then root node 
+
+*Traversal always starts from the root

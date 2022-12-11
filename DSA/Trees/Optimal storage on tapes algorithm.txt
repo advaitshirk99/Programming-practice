@@ -1,0 +1,29 @@
+GREEDY ALGORITHM APPLICATIONS
+
+Q92, a)Optimal storage on tapes
+
+DESCRIPTION: Find storage order of n programs such that 
+the mean retrieval time (MRT) is minimum
+INPUT: L is array of the program length sorted in ascending order
+OUTPUT: Minimum Mean retrieval time
+
+Tj = 0
+for i=1 to n do
+    for j=1 to i do
+        Tj = Tj + L[j]
+    end
+end
+MRT = (Tj)/n
+
+EXAMPLE:
+let (P1, P2, P3) ==> L = [3, 8, 14]
+Tj = 0;
+for(i=0; i<3; i++){
+    for(j=0; j<i; j++){
+        Tj = Tj +L[j]
+    }
+}
+MRT = (Tj)/n;
+
+Here, Tj = (3 + (3+8) + (3+8+14)), n =3
+Hence, MRT = (39)/3 = 13

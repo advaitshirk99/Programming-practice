@@ -1,0 +1,36 @@
+Q92, b) Job sequencing with deadlines
+
+DESCRIPTION: Schedule the jobs using greedy approach which maximizes the profit
+INPUT: 
+J- Array of N jobs
+D- Array of deadlines for each job
+P- Array of profit associated with each job
+OUTPUT: Set of scheduled jobs which gives maximum profit
+J sorted in decreasing order of profit
+S = 0 .....(Set of scheduled jobs)
+SP = 0 .....(Sum of profits)
+
+for i=1 to N do
+    if job J[i] is feasible then
+        schedule the job in the latest possible free slot meeting its deadlines
+        S = S U J[i] ....(U: union)
+        SP = SP +P[i]
+    end
+end
+
+EXAMPLE: 
+Let (P1, P2, P3, P4) = (100, 10, 15, 27); (d1, d2, d3, d4) = (2, 1, 2, 1)
+total slots available = 2
+Iteration 1:
+S = {J1}
+SP = {100}
+Iteration 2:
+S = {J4, J1}
+SP = 100
+Iteration 3 and 4: 
+S = {J4, J1}
+SP = 127
+hence, final SP is 127 fro sequence J4, J1
+
+
+
