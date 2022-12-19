@@ -28,4 +28,4 @@ Iteration 1: s =0 < m=20
 s = 15, p = 24
 Iteration 2: s =15, < m =20
 s = 20, p = 24 + (5/10) * 15 = 31.5
-While loop stops, and final profit is 31.5 
+While loop stops, and final profit is 31.5
