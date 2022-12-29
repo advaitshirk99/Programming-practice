@@ -43,7 +43,7 @@ void enqueue(queue *q, int val){
 void dequeue(queue *q){
     int a = -1; //If element can't be dequeued
     if(q->front == q->rear) printf("\nNo element to dequeue\n");
-    if(q->rear == q->size-1) printf("\nQueue is full\n"); //Returning 1 indicates Queue is full
+    if(q->rear == q->size-1) printf("\nQueue is full\n"); //Returning 1 indicates Queue is full, not necessary
     else{
         q->front++;
         a = q->arr[q->front];
