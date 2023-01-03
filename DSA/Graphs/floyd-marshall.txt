@@ -1,0 +1,12 @@
+Algorithm:
+Begin
+   for k := 0 to n, do
+      for i := 0 to n, do
+         for j := 0 to n, do
+            if cost[i,k] + cost[k,j] < cost[i,j], then
+               cost[i,j] := cost[i,k] + cost[k,j]
+            done
+         done
+      done
+      display the current cost matrix
+End
