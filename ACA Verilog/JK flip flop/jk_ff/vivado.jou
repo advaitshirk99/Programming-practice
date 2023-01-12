@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jan 12 17:56:02 2023
+# Process ID: 17084
+# Current directory: D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/JK flip flop/jk_ff
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15904 D:\Academic stuff\MSIS Github\Programming-practice\ACA Verilog\JK flip flop\jk_ff\jk_ff.xpr
+# Log file: D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/JK flip flop/jk_ff/vivado.log
+# Journal file: D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/JK flip flop/jk_ff\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/JK flip flop/jk_ff/jk_ff.xpr}
+update_compile_order -fileset sources_1

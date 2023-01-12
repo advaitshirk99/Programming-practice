@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Mealy machine/mealy_10110/mealy_10110.srcs/sources_1/new/mealy_seq_10110.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mealy_seq_10110
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Mealy machine/mealy_10110/mealy_10110.srcs/sim_1/new/mealy_10110_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mealy_10110_tb

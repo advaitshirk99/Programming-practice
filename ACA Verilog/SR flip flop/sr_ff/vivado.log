@@ -1,0 +1,159 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jan 12 18:48:46 2023
+# Process ID: 8512
+# Current directory: D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/SR flip flop/sr_ff
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19192 D:\Academic stuff\MSIS Github\Programming-practice\ACA Verilog\SR flip flop\sr_ff\sr_ff.xpr
+# Log file: D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/SR flip flop/sr_ff/vivado.log
+# Journal file: D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/SR flip flop/sr_ff\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/SR flip flop/sr_ff/sr_ff.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/SR flip flop/sr_ff'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Embedded/Xilinx-Vivado/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:08 . Memory (MB): peak = 688.227 ; gain = 35.133
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/SR flip flop/sr_ff/sr_ff.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sr_ff_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/SR flip flop/sr_ff/sr_ff.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sr_ff_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/SR flip flop/sr_ff/sr_ff.srcs/sim_1/new/sr_ff_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sr_ff_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/SR flip flop/sr_ff/sr_ff.sim/sim_1/behav/xsim'
+"xelab -wto 07009dd2a7c9447a8c1a47a76087773c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sr_ff_tb_behav xil_defaultlib.sr_ff_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Embedded/Xilinx-Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 07009dd2a7c9447a8c1a47a76087773c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sr_ff_tb_behav xil_defaultlib.sr_ff_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sr_ff
+Compiling module xil_defaultlib.sr_ff_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sr_ff_tb_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/Academic -notrace
+couldn't read file "D:/Academic": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Thu Jan 12 18:50:11 2023...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 717.195 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/SR flip flop/sr_ff/sr_ff.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sr_ff_tb_behav -key {Behavioral:sim_1:Functional:sr_ff_tb} -tclbatch {sr_ff_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source sr_ff_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 723.711 ; gain = 6.516
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sr_ff_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 723.711 ; gain = 6.516
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 741.496 ; gain = 16.621
+close_project
+create_project moore_seq_10110 {D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110} -part xc7a12ticsg325-1L
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Embedded/Xilinx-Vivado/Vivado/2019.1/data/ip'.
+create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 751.281 ; gain = 9.785
+file mkdir D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sources_1/new
+file mkdir D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sources_1/new
+file mkdir D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sources_1/new
+file mkdir D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sources_1/new
+file mkdir D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sources_1/new
+file mkdir D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sources_1/new
+file mkdir {D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sources_1/new}
+close [ open {D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sources_1/new/moore_10110.v} w ]
+add_files {{D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sources_1/new/moore_10110.v}}
+update_compile_order -fileset sources_1
+file mkdir D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sim_1/new
+file mkdir D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sim_1/new
+file mkdir D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sim_1/new
+file mkdir D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sim_1/new
+file mkdir D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sim_1/new
+file mkdir {D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sim_1/new}
+close [ open {D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sim_1/new/moore_10110_tb.v} w ]
+add_files -fileset sim_1 {{D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sim_1/new/moore_10110_tb.v}}
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'moore_10110' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj moore_10110_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sources_1/new/moore_10110.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module moore_10110
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.sim/sim_1/behav/xsim'
+"xelab -wto a1c8da478f894e7d86f7e1f04372d559 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot moore_10110_behav xil_defaultlib.moore_10110 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Embedded/Xilinx-Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto a1c8da478f894e7d86f7e1f04372d559 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot moore_10110_behav xil_defaultlib.moore_10110 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.moore_10110
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot moore_10110_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/Academic -notrace
+couldn't read file "D:/Academic": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Thu Jan 12 20:04:33 2023...
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:52 . Memory (MB): peak = 760.383 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:56 . Memory (MB): peak = 760.383 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled

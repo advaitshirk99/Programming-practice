@@ -1,0 +1,120 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 18608
+License: Customer
+
+Current time: 	Thu Jan 12 20:06:02 IST 2023
+Time zone: 	India Standard Time (Asia/Calcutta)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Available disk space: 102 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Embedded/Xilinx-Vivado/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	D:/Embedded/Xilinx-Vivado/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	adshi
+User home directory: C:/Users/adshi
+User working directory: D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110
+User country: 	IN
+User language: 	en
+User locale: 	en_IN
+
+RDI_BASEROOT: D:/Embedded/Xilinx-Vivado/Vivado
+HDI_APPROOT: D:/Embedded/Xilinx-Vivado/Vivado/2019.1
+RDI_DATADIR: D:/Embedded/Xilinx-Vivado/Vivado/2019.1/data
+RDI_BINDIR: D:/Embedded/Xilinx-Vivado/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/adshi/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/adshi/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/adshi/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	D:/Embedded/Xilinx-Vivado/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/vivado.log
+Vivado journal file location: 	D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/vivado.jou
+Engine tmp dir: 	D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/.Xil/Vivado-18608-LAPTOP-1SADKEOB
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Embedded/Xilinx-Vivado/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: D:/Embedded/Xilinx-Vivado/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Embedded/Xilinx-Vivado/Vivado/2019.1
+XILINX_SDK: D:/Embedded/Xilinx-Vivado/SDK/2019.1
+XILINX_VIVADO: D:/Embedded/Xilinx-Vivado/Vivado/2019.1
+XILINX_VIVADO_HLS: D:/Embedded/Xilinx-Vivado/Vivado/2019.1
+
+
+GUI allocated memory:	188 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 637 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: D:\Academic stuff\MSIS Github\Programming-practice\ACA Verilog\Moore machine\moore_seq_10110\moore_seq_10110.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Embedded/Xilinx-Vivado/Vivado/2019.1/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 110 MB (+113094kb) [00:00:19]
+// [Engine Memory]: 653 MB (+533121kb) [00:00:19]
+// WARNING: HEventQueue.dispatchEvent() is taking  5478 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 55 MB. Current time: 1/12/23, 8:06:09 PM IST
+// Tcl Message: open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:08 . Memory (MB): peak = 691.070 ; gain = 44.793 
+// Project name: moore_seq_10110; location: D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110; part: xc7a12ticsg325-1L
+dismissDialog("Open Project"); // by (cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 53 MB. Current time: 1/12/23, 8:06:25 PM IST
+// [Engine Memory]: 695 MB (+10287kb) [00:00:57]
+// Elapsed time: 32 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // B (F, cl)
+// PAPropertyPanels.initPanels (moore_10110_tb.v) elapsed time: 0.4s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, moore_10110_tb (moore_10110_tb.v)]", 5, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cl):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE

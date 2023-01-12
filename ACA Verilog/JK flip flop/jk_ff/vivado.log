@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jan 12 17:56:02 2023
+# Process ID: 17084
+# Current directory: D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/JK flip flop/jk_ff
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15904 D:\Academic stuff\MSIS Github\Programming-practice\ACA Verilog\JK flip flop\jk_ff\jk_ff.xpr
+# Log file: D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/JK flip flop/jk_ff/vivado.log
+# Journal file: D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/JK flip flop/jk_ff\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/JK flip flop/jk_ff/jk_ff.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/JK flip flop/jk_ff'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Embedded/Xilinx-Vivado/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:09 . Memory (MB): peak = 689.852 ; gain = 48.402
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 12 19:26:00 2023...

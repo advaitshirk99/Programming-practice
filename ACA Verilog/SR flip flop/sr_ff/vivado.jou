@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jan 12 18:48:46 2023
+# Process ID: 8512
+# Current directory: D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/SR flip flop/sr_ff
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19192 D:\Academic stuff\MSIS Github\Programming-practice\ACA Verilog\SR flip flop\sr_ff\sr_ff.xpr
+# Log file: D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/SR flip flop/sr_ff/vivado.log
+# Journal file: D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/SR flip flop/sr_ff\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/SR flip flop/sr_ff/sr_ff.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source sr_ff_tb.tcl
+close_sim
+close_project
+create_project moore_seq_10110 {D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110} -part xc7a12ticsg325-1L
+file mkdir D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sources_1/new
+file mkdir D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sources_1/new
+file mkdir D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sources_1/new
+file mkdir D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sources_1/new
+file mkdir D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sources_1/new
+file mkdir D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sources_1/new
+file mkdir {D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sources_1/new}
+close [ open {D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sources_1/new/moore_10110.v} w ]
+add_files {{D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sources_1/new/moore_10110.v}}
+update_compile_order -fileset sources_1
+file mkdir D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sim_1/new
+file mkdir D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sim_1/new
+file mkdir D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sim_1/new
+file mkdir D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sim_1/new
+file mkdir D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sim_1/new
+file mkdir {D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sim_1/new}
+close [ open {D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sim_1/new/moore_10110_tb.v} w ]
+add_files -fileset sim_1 {{D:/Academic stuff/MSIS Github/Programming-practice/ACA Verilog/Moore machine/moore_seq_10110/moore_seq_10110.srcs/sim_1/new/moore_10110_tb.v}}
+update_compile_order -fileset sim_1
+launch_simulation
