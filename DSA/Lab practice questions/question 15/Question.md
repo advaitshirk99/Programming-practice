@@ -1,0 +1,1 @@
+15. Write a program that will take two arrays as input from the user, sort them using the insertion sort and then merge them into single resultant sorted array. The merging should be done only after sorting and the merging should be done in optimal fashion

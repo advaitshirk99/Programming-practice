@@ -1,0 +1,1 @@
+18. Describe  a  0(n  logn)  time  algorithm  that,  given  a  set  of  n  real  numbers  and  another number  x  determines  whether  or  not  there  exits  two  elements  in  the  set  whose  sum  is exactly x

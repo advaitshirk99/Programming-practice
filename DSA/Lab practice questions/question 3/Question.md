@@ -1,0 +1,1 @@
+3. Consider two liked list A of size N. Write a program to Split the linked list two parts i.e. B and C each of size N/2.

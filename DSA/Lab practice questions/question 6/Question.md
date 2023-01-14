@@ -1,0 +1,1 @@
+6. WAP to implement stack operations PUSH and POP using 2 Queues.

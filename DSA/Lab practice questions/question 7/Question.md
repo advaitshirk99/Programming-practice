@@ -1,0 +1,1 @@
+7. WAP to implement Queue operations INSERT and DELETE using 2 stacks.

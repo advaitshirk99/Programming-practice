@@ -1,0 +1,1 @@
+9. WAP  program  to  create  binary  tree  and  traverse  the  tree  using  Inorder,  PreOrder,  Post Order Traversing Technique.
