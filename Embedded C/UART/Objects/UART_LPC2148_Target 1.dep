@@ -1,11 +1,12 @@
 Dependencies for Project 'UART_LPC2148', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
 F (.\Startup.s)(0x559CFDE8)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips--pd "__UVISION_VERSION SETA 529"--list .\listings\startup.lst --xref -o .\objects\startup.o --depend .\objects\startup.d)
-F (.\uart.c)(0x6370C13C)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="529"-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
+F (.\uart.c)(0x63C42B01)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="529"-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
 I (pll.h)(0x6370FDE1)
 I (C:\Keil_v5\ARM\INC\Philips\lpc214x.h)(0x559CFE30)
-F (.\uart.h)(0x6370C13C)()
-F (.\uart_main.c)(0x6370FF35)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="529"-o .\objects\uart_main.o --omf_browse .\objects\uart_main.crf --depend .\objects\uart_main.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AF540)
+F (.\uart.h)(0x63C437E3)()
+F (.\uart_main.c)(0x63C4264E)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="529"-o .\objects\uart_main.o --omf_browse .\objects\uart_main.crf --depend .\objects\uart_main.d)
 I (pll.h)(0x6370FDE1)
 I (uart.h)(0x6370C13C)
 I (C:\Keil_v5\ARM\INC\Philips\lpc214x.h)(0x559CFE30)
@@ -13,3 +14,21 @@ F (..\Timer and Counter\pll.c)(0x6370FDE3)(--c99 --gnu -c --cpu ARM7TDMI -D__EVA
 I (..\Timer and Counter\pll.h)(0x6370FDE1)
 I (C:\Keil_v5\ARM\INC\Philips\lpc214x.h)(0x559CFE30)
 F (..\Timer and Counter\pll.h)(0x6370FDE1)()
+F (.\functions.h)(0x63C43C08)()
+F (.\palindrome.c)(0x63C437DE)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="529"-o .\objects\palindrome.o --omf_browse .\objects\palindrome.crf --depend .\objects\palindrome.d)
+I (C:\Keil_v5\ARM\INC\Philips\lpc214x.h)(0x559CFE30)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AF540)
+I (functions.h)(0x63C43AD0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AF542)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9AF540)
+I (pll.h)(0x6370FDE1)
+I (uart.h)(0x63C437E3)
+F (.\armstrong.c)(0x63C43E20)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="529"-o .\objects\armstrong.o --omf_browse .\objects\armstrong.crf --depend .\objects\armstrong.d)
+I (C:\Keil_v5\ARM\INC\Philips\lpc214x.h)(0x559CFE30)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AF540)
+I (functions.h)(0x63C43C08)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AF542)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9AF540)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9AF542)
+I (pll.h)(0x6370FDE1)
+I (uart.h)(0x63C437E3)

@@ -13,11 +13,11 @@ void delay(unsigned int t){
 
 void cmd(char command){
 	
-	IOPIN0 = ((IOPIN0 & 0xFFFF00FF) | (command << 8)); 	//Sending the command through port0's 8 - 15 pins
-	IOSET0 = 0x00000040;																//Setting pin P0.6 of lpc2148 to high, so that EN = 1 on LCD
-	IOCLR0 = 0x00000030;																//Setting pin P0.4 and P0.5 to low, so that RS = 0, RW = 0 on LCD
+	IOPIN0 = (IOPIN0 & 0xFFFF00FF) | (command << 8); 							//Sending the command through port0's 8 - 15 pins
+	IOSET0 = 0x40;																//Setting pin P0.6 of lpc2148 to high, so that EN = 1 on LCD
+	IOCLR0 = 0x30;																//Setting pin P0.4 and P0.5 to low, so that RS = 0, RW = 0 on LCD
 	delay(2);
-	IOCLR0 = 0x00000040;																//Setting pin P0.6 of lpc2148 to low, so that EN = 0, RW = 0, RS = 0 on LCD
+	IOCLR0 = 0x40;																//Setting pin P0.6 of lpc2148 to low, so that EN = 0, RW = 0, RS = 0 on LCD
 	delay(5);
 }
 

@@ -1,0 +1,30 @@
+import cv2
+import matplotlib.pyplot as plt
+import numpy as np
+import math
+import matplotlib.image as mpimg
+
+#low pass filter
+(lpfw,lpfh) = (3,3)
+lowPassFilter = np.ones((lpfw,lpfh))*1/(lpfw*lpfh)
+
+#high pass filter
+(hpfw,hpfh) = (3,3)
+highPassFilter = -1*np.ones((hpfw,hpfh))
+highPassFilter[hpfw//2,hpfh//2] = -np.sum(highPassFilter)-1
+
+def conv(image, filter):
+    iw,ih,id = image.shape
+    
+    fw,fh = filter.shape    
+    out = np.zeros((iw-fw+1,ih-fh+1,id))
+    
+    for d in range(id):
+        for w in range(ih-fh+1):
+            for h in range(iw-fw+1):
+                out[w,h,d] = np.sum(filter*image[w:w+fh , h:h+fw , d])
+    
+    if id == 1:
+        return np.resize(out, (out.shape[0], out.shape[1])).astype(np.uint8)
+    else:
+        return out.astype(np.uint8)

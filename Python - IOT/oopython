@@ -1,0 +1,20 @@
+class Pet:
+    def __init__(self, name, age):
+        self.name=name
+        self.age=age
+    def show(self):
+        print(f"I am {self.name}, and I am {self.age} years old.")
+    def speak(self):
+        print("IDK dude")
+class Cat(Pet):
+    def speak(self):
+        print("meow")
+
+class Dog(Pet):
+    def speak(self):
+        print("woof")
+p=Pet("bill", 19)
+p.speak()
+c=Cat("dill", 25)
+d=Dog("bob", 9)
+d.speak()
